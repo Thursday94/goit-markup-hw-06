@@ -35,13 +35,83 @@
                     <li class="header-address-item"><a class="header-address-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+                <button class="burger-button" type="button" data-menu-open>
+                    <svg class="burger-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-burger-menu"></use>
+                    </svg>
+                </button>
         </div>
+        <!-----Mobile Menu------>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu-container">
+               <button class="mobile-close-button" type="button" data-menu-close>
+                    <svg class="mobile-close-icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <nav class="mobile-menu-nav">
+                    <ul class="mobile-menu-nav-list">
+                        <li class="mobile-menu-nav-item">
+                            <a class="mobile-menu-nav-link" href="./index.html">Studio</a>
+                        </li>
+                        <li class="mobile-menu-nav-item">
+                            <a class="mobile-menu-nav-link" href="">Portfolio</a>
+                        </li>
+                        <li class="mobile-menu-nav-item">
+                            <a class="mobile-menu-nav-link" href="">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <address class="mobile-menu-address">
+                    <ul class="mobile-menu-address-list">
+                        <li class="mobile-menu-address-item">
+                            <a class="mobile-menu-address-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li class="mobile-menu-address-item">
+                            <a class="mobile-menu-address-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        </li>
+                    </ul>
+                </address>
+                <div class="mobile-menu-social">
+                    <ul class="mobile-menu-social-list">
+                        <li class="mobile-menu-social-item">
+                            <a href="https://www.instagram.com/" target="_blank" class="mobile-menu-social-link">
+                                <svg class="mobile-menu-social-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-menu-social-item">
+                            <a href="https://x.com/" target="_blank" class="mobile-menu-social-link">
+                                <svg class="mobile-menu-social-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-menu-social-item">
+                            <a href="https://www.facebook.com/" target="_blank" class="mobile-menu-social-link">
+                                <svg class="mobile-menu-social-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-menu-social-item">
+                            <a href="https://www.linkedin.com/" target="_blank" class="mobile-menu-social-link">
+                                <svg class="mobile-menu-social-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
     </header>
 
                                             <!---------- Section-1 HERO ---------->
 
 
-    <main class="main">
+    <main class="main hide">
         <section class="hero">
             <div class="container">
                 <h1 class="hero-page-title">Effective Solutions for Your Business</h1>
@@ -51,7 +121,7 @@
 
                                             <!---------- Section-2 VALUES ---------->
 
-        <section class="values">
+     <section class="values hide">
             <div class="container">
                 <h2 class="visually-hidden">Core Values</h2>
                 <ul class="values-list">
@@ -108,7 +178,7 @@
 
                                             <!---------- Section-3 TEAM ---------->
 
-        <section class="team">
+        <section class="team hide">
             <div class="container">
                 <h2 class="team-title">Our Team</h2>
                 <ul class="team-list">
@@ -281,7 +351,7 @@
 
                                                     <!---------- Section-4 PORTFOLIO ---------->
 
-        <section class="portfolio">
+        <section class="portfolio hide">
             <div class="container">
                 <h2 class="portfolio-title">Our Portfolio</h2>
                     <ul class="portfolio-list">
@@ -369,7 +439,7 @@
 
                                                 <!---------- FOOTER ---------->
 
-    <footer class="footer">
+    <footer class="footer hide">
         <div class="container">
                 <!-----First part----->                                  
             <div class="footer-left">
@@ -429,7 +499,7 @@
         </div>
     </footer> 
                                         <!----- Modal ----->
-        <div class="backdrop" data-modal>
+        <div class="backdrop hide" data-modal>
             <div class="modal">
                <button class="modal-close-button" type="button" data-modal-close>
                     <svg class="modal-close-icon" width="8" height="8">
@@ -489,5 +559,6 @@
             </div>    
         </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
 </body>
 </html>
