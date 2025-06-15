@@ -309,7 +309,7 @@ address {
     align-items: center;
     justify-content: center;
     gap: 24px;
-    /*margin-top: 8px;*/
+  
 }
 
 .team-item-social-item {
@@ -436,6 +436,7 @@ address {
 .footer .container {
     display: flex;
     align-items: baseline;
+
 }
 
 .footer-logo-web {
