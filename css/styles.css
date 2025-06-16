@@ -509,6 +509,9 @@ button {
 /*==============================================================*/
 
 /*============================== Section-3 TEAM ================*/
+.team.container {
+        padding: 96px 15px;
+}
 
 .team-title {
     font-weight: 700;
@@ -599,7 +602,7 @@ button {
                                     /*-----Tablet-----*/
 @media screen and (min-width: 768px) {
 .team.container {
-        padding: 0 108px;    
+        padding: 96px 108px;
 }
 .team-list {
     column-gap: 24px;
@@ -626,7 +629,7 @@ button {
                                      /*-----Desktop-----*/
 @media screen and (min-width: 1158px) { 
 .team.container {
-    padding: 0 15px;
+    padding: 120px 0px;
 }
 .team-list {
     gap: 24px; 
@@ -652,8 +655,7 @@ button {
 
 /*=========================== Section-4 PORTFOLIO =================*/
 .portfolio {
-    padding-top: 192px;
-    padding-bottom: 96px;
+    padding: 96px 0;
 }
 
 .portfolio-title {
@@ -713,11 +715,66 @@ button {
 }
                                         /*-----Tablet-----*/
 @media screen and (min-width: 768px) {
-
+.portfolio-list {
+    row-gap: 72px;
+    column-gap: 24px;   
 }
+
+.portfolio-item {
+    max-width: 356px;
+}
+}
+
                                         /*-----Desktop-----*/
 @media screen and (min-width: 1158px) {
-
+    .portfolio {
+            padding: 120px 0;
+        }
+    
+        .portfolio-item {
+            width: calc((100% - 48px) / 3);
+            max-width: 360px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        .portfolio-item-cover {
+            position: relative;
+            overflow: hidden;
+        }
+    
+        .portfolio-item-cover-text {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            padding: 40px 32px;
+            background-color: #4d5ae5;
+            color: #f4f4fd;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            transform: translateY(100%);
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        .portfolio-item:hover .portfolio-item-cover-text {
+            transform: translateY(0);
+        }
+    
+    
+        .portfolio-item:hover {
+            box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+        }
+    
+        .portfolio-list {
+            gap: 48px 24px;
+        }
+    
 }
 
 /*=================================================*/
