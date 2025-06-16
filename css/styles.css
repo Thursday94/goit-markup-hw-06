@@ -785,7 +785,7 @@ button {
     padding: 96px 0;
 }
 
-.footer .container {
+.footer.container {
     display: flex;
     flex-direction: column;
 }
@@ -828,7 +828,11 @@ button {
 }
 
 .footer-social {
-    margin-bottom: 72px;
+   /* margin-bottom: 72px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .footer-social-title {
@@ -932,11 +936,14 @@ button {
     fill: #fff;
     margin-left: 16px;
 }
-
+                                       /*-----Tablet-----*/
 @media screen and (min-width: 768px) {
-
+.footer {
+    padding: 96px 0;   
 }
 
+}
+                                        /*-----Desktop-----*/
 @media screen and (min-width: 1158px) {
 
 }
