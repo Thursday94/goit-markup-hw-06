@@ -1,4 +1,4 @@
-body {
+/*body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     color: #434455;
@@ -6,7 +6,7 @@ body {
 }
 /*============= Reset default browser styles ============*/
 
-p, h1, h2, h3, h4, h5, h6 {
+/*p, h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -29,7 +29,7 @@ address {
 /*========================================================================*/
 /*======================================= header =========================*/
 
-.container {
+/*.container {
    max-width: 1158px;
    padding: 0 15px;
    margin: 0 auto;  
@@ -139,7 +139,7 @@ address {
 }
 /*==========================================================================*/
 /*============================== Section-1 HERO ============================*/
-.hero {
+/*.hero {
     background-color: #2e2f42;
     padding: 188px 0;
     margin: 0 auto;
@@ -187,7 +187,7 @@ address {
 /*==============================================================*/
 /*============================ Section-2 VALUES ================*/
 
-.values {
+/*.values {
     padding: 120px 0;
 }
 
@@ -245,7 +245,7 @@ address {
 /*==============================================================*/
 /*============================== Section-3 TEAM ================*/
 
-.team {
+/*.team {
     background-color: #f4f4fd;
     padding: 120px 0;
 }
@@ -341,7 +341,7 @@ address {
 /*=================================================================*/
 /*=========================== Section-4 PORTFOLIO =================*/
 
-.portfolio {
+/*.portfolio {
     padding: 120px 0;
 }
 
@@ -428,7 +428,7 @@ address {
 }
 /*=================================================*/
 /*============================= FOOTER ============*/
-.footer {
+/*.footer {
     background-color: #2e2f42;
     padding: 100px 0;
 }
@@ -525,7 +525,7 @@ address {
 
 /*-----Third part-----*/
 
-.subscribe-form {
+/*.subscribe-form {
     display: flex;
     align-items: center;
     gap: 24px;
@@ -552,7 +552,7 @@ address {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     padding: 8px 16px;
     /*gap: 24px;*/
-    background-color: transparent;
+   /* background-color: transparent;
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.04em;
@@ -601,7 +601,7 @@ address {
 
 /*----- Backdrop -----*/
 
-.backdrop {
+/*.backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -701,7 +701,6 @@ address {
     letter-spacing: 0.04em;
     color: #8e8f99;
     margin-bottom: 4px;
-
 }
 
 .modal-input {
@@ -794,7 +793,7 @@ address {
     margin-bottom: 24px;
     line-height: 1.17;
 }
-
+/*
 .terms {
 width: 16px;
 height: 16px;
