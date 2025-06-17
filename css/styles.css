@@ -284,11 +284,9 @@ button {
         border-radius: 2px;
         background-color: #404bbf;       
     }
-    .header-address-link:hover,
+    
     .header-address-link:focus,
-    .header-nav-link:hover,
     .header-nav-link:focus,
-    .header-nav-link.current:hover,
     .header-nav-link.current:focus {
         color: #404bbf;   
     }
@@ -329,6 +327,16 @@ button {
         line-height: 1.5;
         letter-spacing: 0.02em;
   }
+
+  .header-address-link:hover,
+  .header-address-link:focus,
+  .header-nav-link:hover,
+  .header-nav-link:focus,
+  .header-nav-link.current:hover,
+  .header-nav-link.current:focus {
+      color: #404bbf;
+  }
+
   .mobile-menu {
     display: none;
   }
@@ -828,7 +836,7 @@ button {
 }
 
 .footer-social {
-   /* margin-bottom: 72px;*/
+    margin-bottom: 72px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -852,7 +860,8 @@ button {
     display: flex;
     gap: 16px;
     list-style: none;
-    justify-content: center;
+    /*justify-content: center;*/
+    margin: 0 auto;
 }
 
 .footer-social-item {
@@ -899,8 +908,12 @@ button {
     width: 288px;
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    opacity: 0.3;
     padding: 8px 16px;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    line-height: 2;
+    color: #ffffff;
     background-color: transparent;
     margin-bottom: 16px;
 }
@@ -911,6 +924,7 @@ button {
     line-height: 24px;
     letter-spacing: 0.04em;
     color: #fff;
+    opacity: 0.6;
 }
 
 .subscribe-button {
@@ -938,13 +952,78 @@ button {
 }
                                        /*-----Tablet-----*/
 @media screen and (min-width: 768px) {
-.footer {
-    padding: 96px 0;   
+.footer-container {
+    padding-left: 108px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+}
+
+.footer-left {
+    max-width: 264px;
+    margin-bottom: 0;
+}
+
+.footer-logo-web {
+    text-align: start;
+}
+
+.footer-social {
+    margin-bottom: 0;
+    justify-content: flex-start;
+    max-width: 208px;
+}
+
+.footer-social-title {
+    margin: 0 0 16px;
+    text-align: start;
+}
+
+.footer-subscribe {
+    max-width: 453px;
+}
+
+.subscribe-title {
+    text-align: start;
+}
+
+.subscribe-input {
+    margin: 0;
+    width: 264px;
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 }
                                         /*-----Desktop-----*/
 @media screen and (min-width: 1158px) {
+.footer {
+    padding: 100px 0;
+}
+
+.footer .container {
+    padding: 0 16px;
+    column-gap: 0;
+    row-gap: 0;
+}
+
+.footer-left {
+    margin-right: 120px;
+}
+
+.footer-social {
+    margin-right: 80px;
+}
+
+.footer-subscribe {
+
+}
 
 }
 
