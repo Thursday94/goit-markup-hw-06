@@ -802,7 +802,6 @@ button {
     color: #4d5ae5; 
 }
                                     /*----------end animation----------*/
-
 .values-item-subtitle {
     font-weight: 500;
     font-size: 20px;
@@ -926,6 +925,7 @@ button {
                                     
                                     /*----------Tablet----------*/
 @media screen and (min-width: 768px) {
+    
 .team.container {
         padding: 96px 108px;
 }
@@ -1019,10 +1019,21 @@ button {
     margin-left: auto;
     margin-right: auto;
     text-align: left;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 
+                0 1px 1px 0 rgba(46, 47, 66, 0.16), 
+                0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-item-cover {
+    position: relative;
+    overflow: hidden;
 }
 
 .portfolio-item-image {
     display: block;
+    width: 100%;
+    height: auto;
+
 }
 
 .portfolio-item-title {
@@ -1055,6 +1066,7 @@ button {
 
 .portfolio-item {
     max-width: 356px;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 }
 
@@ -1070,6 +1082,7 @@ button {
             position: relative;
             overflow: hidden;
             cursor: pointer;
+            box-shadow: none;
             transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
     
