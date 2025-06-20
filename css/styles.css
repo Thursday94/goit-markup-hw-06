@@ -535,7 +535,6 @@ button {
         display: flex;
         align-items: center;
         gap: 40px;
-        padding: 24px 0;
     }
     .header-nav-link {
         font-weight: 500;
@@ -625,7 +624,7 @@ button {
 
 /*============================== Section-1 HERO ============================*/
 .hero {
-    padding: 72px 52px;
+    padding: 72px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
                       url("../images/mobile/back-mob-1x.jpg");
     margin: 0 auto;
@@ -738,7 +737,7 @@ button {
 
 .values-item {
     width: 100%;
-    max-width: 288px;
+    /*max-width: 288px;*/
     margin-left: auto;
     margin-right: auto;
     text-align: left;
@@ -772,8 +771,8 @@ button {
     row-gap: 72px;
 }
 .values-item {
-    max-width: 356px;
-    width: calc((100% - 72px) / 2);
+    /*max-width: 356px;*/
+    width: calc((100% - 24px) / 2);
   }
 
 .values-item-subtitle {
@@ -784,6 +783,7 @@ button {
 @media screen and (min-width: 1158px) {
 .values {
     padding: 120px 0;
+    /*max-width: 1128px;*/
 }
 
 .values-list {
@@ -840,10 +840,7 @@ button {
 /*============================== Section-3 TEAM ================*/
 .team {
     background-color: #f4f4fd;
-}
-
-.team.container {
-        padding: 96px 15px;
+    padding: 96px 0;
 }
 
 .team-title {
@@ -872,7 +869,9 @@ button {
     text-align: center;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
                 0 1px 1px 0 rgba(46, 47, 66, 0.16),
-                0 1px 6px 0 rgba(46, 47, 66, 0.08);  
+                0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    
+    max-width: 264px;  
 }
 
 .team-item:hover {
@@ -937,8 +936,8 @@ button {
                                     /*----------Tablet----------*/
 @media screen and (min-width: 768px) {
     
-.team.container {
-        padding: 96px 108px;
+.team {
+        padding: 96px 0;
 }
 .team-list {
     column-gap: 24px;
@@ -1299,7 +1298,6 @@ button {
                                        /*----------Tablet----------*/
 @media screen and (min-width: 768px) {
 .footer-container {
-    padding-left: 108px;
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
@@ -1350,6 +1348,13 @@ button {
 .subscribe-button:focus {
     background-color: #404bbf;
 }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+.footer-container {
+    max-width: 584px;
+}   
 
 }
                                         /*----------Desktop----------*/
