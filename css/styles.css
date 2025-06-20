@@ -165,11 +165,22 @@ button {
 
 .mobile-close-button {
     position: absolute;
+    width: 24px;
+    height: 24px;
     top: 24px;
     right: 24px;
     border-radius: 100%;
     border: 1px solid #E4E4E4;
     background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-close-icon {
+    width: 8px;
+    height: 8px;
+    fill: #2e2f42;
 }
 
 .mobile-menu-address-list {
